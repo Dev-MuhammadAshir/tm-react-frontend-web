@@ -1,0 +1,125 @@
+.pricing {
+  padding: 4rem 0;
+  background-color: var(--bg-secondary);
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: var(--text-primary);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  align-items: stretch;
+}
+
+.planCard {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+
+.planCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.popular {
+  border: 2px solid var(--accent);
+  position: relative;
+}
+
+.popularBadge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: var(--accent);
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.25rem 1rem;
+  border-bottom-left-radius: 0.5rem;
+  z-index: 1;
+}
+
+.planCard h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.price {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.price span {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--text-secondary);
+}
+
+.features {
+  list-style: none;
+  margin: 1.5rem 0;
+  flex: 1;
+  text-align: left;
+  padding: 0;
+}
+
+.features li {
+  margin-bottom: 0.75rem;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.features li::before {
+  content: "✓";
+  color: var(--success);
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+.planCard button {
+  margin-top: auto;
+  width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .pricing {
+    padding: 3rem 0;
+  }
+
+  .title {
+    font-size: 1.75rem;
+  }
+
+  .grid {
+    gap: 1.5rem;
+  }
+
+  .price {
+    font-size: 2rem;
+  }
+}
