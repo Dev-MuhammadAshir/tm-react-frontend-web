@@ -2,7 +2,7 @@ import { useForm } from 'react-hook-form'
 import { useNavigate, Link } from 'react-router-dom'
 import { useAuth } from '../../context/AuthContext'
 import Card from '../../ui/card/Card'
-import Input from '../../ui/Input/Input'
+import Input from '../../ui/input/Input'
 import Button from '../../ui/button/Button'
 import styles from './Register.module.css'
 
